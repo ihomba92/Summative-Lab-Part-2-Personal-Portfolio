@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+margin-left: 20px;
+margin-right: 20px;
+padding: 1px;
+box-sizing: border-box;
+}
+.header {
+    text-align: start;
+    font-size: 1rem;
+    color: rgb(151, 187, 220);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-style: italic;
+}
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+background: #cacae8;
+background: linear-gradient(180deg, rgba(202, 202, 232, 1) 7%, rgba(0, 212, 255, 1) 31%);
+text-align: center;
+gap: 40px;
+}
+#header img {
+    width: 200px;
+    height: 300px;
+}  
+#header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    box-decoration-break: none;
+    size: 2cm;
+    align-items: start;
+}
+#header button img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+#About {
+    display: flex;
+    margin-left: 0%;
+    margin-right: 0%;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    background: #020024;
+background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 14%);
+}
+#About .resume button {
+    background-color: rgb(166, 209, 209);
+    border: none;
+    border-color: aqua;
+    cursor: pointer;
+    font-size: 0.5rem;
+   font-style: italic;
+   border-radius: 0%;
+
+}
+#About .paragraph1 {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    gap: 20px
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ background: #020024;
+background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 7%);
+}
+ #projects .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ #projects .workstation_img {
+
+   
+ }
+#Body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+   background: #cacae8;
+background: linear-gradient(360deg, rgba(202, 202, 232, 1) 7%, rgba(0, 212, 255, 1) 31%);
+}
+#contact .cont h5 {
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-size: 1.5rem;
+    font-style: italic;
+}
+#contact .contact_info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#contact .contact_info button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+ #contact .contact_info button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    box-decoration-break: none;
+    size: 2cm;
+    align-items: start;
+ }
