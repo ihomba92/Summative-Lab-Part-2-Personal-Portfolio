@@ -6,6 +6,8 @@ margin-right: 20px;
 padding: 1px;
 box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap');
+
 .header {
     text-align: start;
     font-size: 1rem;
@@ -17,6 +19,7 @@ box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 10px;
 background: #cacae8;
 background: linear-gradient(180deg, rgba(202, 202, 232, 1) 7%, rgba(0, 212, 255, 1) 31%);
@@ -27,6 +30,11 @@ gap: 40px;
     width: 200px;
     height: 300px;
 }  
+
+#header .reponsive {
+    width: 100%;
+    height: auto;
+}
 #header button {
     background-color: transparent;
     border: none;
@@ -39,6 +47,11 @@ gap: 40px;
     width: 35px;
     height: 35px;
     border-radius: 50%;
+}
+#header button img:hover {
+     color: #e8eaf0;
+  background: rgb(116, 163, 216);
+  border-radius: 30%;
 }
 #About {
     display: flex;
@@ -68,10 +81,13 @@ background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, r
 }
 #projects {
     display: flex;
+    /*margin-left: 0%;
+    margin-right: 0%;*/
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     color: black;
-    gap: 20px
+    gap: 1px
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  background: #020024;
 background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 7%);
@@ -80,11 +96,16 @@ background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%,
     display: flex;
     flex-direction: column;
     align-items: center;
+    
  }
- #projects .workstation_img {
-
-   
+ /*.workstation_img {
+width: 10%;
+height: 5%;
  }
+ /*#projects .workstation_img .reponsive {
+    width: 100%;
+    height: auto;  
+ }*/
 #Body {
     display: flex;
     flex-direction: column;
@@ -95,8 +116,11 @@ background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%,
     display: flex;
     flex-direction: column;
     align-items: center; 
-   background: #cacae8;
-background: linear-gradient(360deg, rgba(202, 202, 232, 1) 7%, rgba(0, 212, 255, 1) 31%);
+    margin-left: 3%;
+    margin-right: 3%;
+    flex-wrap: wrap;
+    background: #cacae8;
+    background: linear-gradient(360deg, rgba(202, 202, 232, 1) 7%, rgba(0, 212, 255, 1) 31%);
 }
 #contact .cont h5 {
     color: black;
@@ -123,3 +147,39 @@ background: linear-gradient(360deg, rgba(202, 202, 232, 1) 7%, rgba(0, 212, 255,
     size: 2cm;
     align-items: start;
  }
+#contact .contact_info button:hover {
+    color: #e8eaf0;
+  background: rgb(74, 185, 232);
+  border-radius: 80%;
+  
+}
+
+@media screen and (max-width: 600px){
+    #main{
+         display: flex;
+         flex-direction: column;
+        
+         
+        }
+    #projects {
+         flex-direction: column;
+         align-items: flex-start;
+         flex-wrap: wrap;
+        }
+  /*#projects {
+    flex: 1 1 45%;
+
+  }*/
+     #contact{
+         flex-direction: column;
+         align-items: flex-start;
+        flex-wrap: wrap;
+         }
+    .contact_info{
+     flex-direction: column;
+     align-items: center;
+     flex-wrap: wrap;
+         }
+
+    
+}
