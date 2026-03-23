@@ -103,7 +103,7 @@ width: 5%;
 height: 2%;
 flex: 1 1 auto;
 margin-right: 40%;
-
+object-fit: contain;
  }
  /*#projects .workstation_img .reponsive {
     width: 100%;
@@ -128,7 +128,6 @@ margin-right: 40%;
 #contact .cont h5 {
     color: black;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-    font-size: 1.5rem;
     font-style: italic;
 }
 #contact .contact_info {
@@ -149,11 +148,13 @@ margin-right: 40%;
     box-decoration-break: none;
     size: 2cm;
     align-items: start;
+    transition: 0.3s;
  }
 #contact .contact_info button:hover {
     color: #e8eaf0;
   background: rgb(74, 185, 232);
   border-radius: 80%;
+  transform: scale(1.05);
   
 }
 
@@ -161,8 +162,6 @@ margin-right: 40%;
     #main{
          display: flex;
          flex-direction: column;
-        
-         
         }
     #projects {
          flex-direction: column;
