@@ -158,10 +158,19 @@ object-fit: contain;
   
 }
 
+#footer {
+    padding: 2em;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 @media screen and (max-width: 600px){
     #main{
          display: flex;
          flex-direction: column;
+          flex: 1 1 100%;
         }
     #projects {
          flex-direction: column;
